@@ -1,7 +1,23 @@
-;;Менеджер пакетов
+;; Менеджер пакетов
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
+
+;; Запускаем пакетные менеджеры
+;; (require 'package)
+;; (package-initialize)
+
+;; (package-refresh-contents) ;; Закоментирована 
+;; так как обновление пакетов занимет много времени и должно
+;; по запроску
+;; Объявляем список пакето
+;; (setq my-packages
+;;      '())
+
+;; Проверяем все пакеты из списка и устанавливаем недостающие
+;; (dolist (pkg my-packages)
+;;  (unless (package-installed-p pkg)
+;;    (package-install pkg)))
 
 ;;Убираем сообщение приветсвия
 (setq inhibit-startup-screen t)
