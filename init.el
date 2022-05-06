@@ -52,9 +52,3 @@
 (require 'uniquify)
 (require 'ido)
 (ido-mode t)
-
-;;Удаленная работа с файлами по SSH, FTP, Samba
-(require 'tramp)
-
-;;Вкулючаем гит
-(autoload 'magit-status "magit" nil t)
